@@ -10,18 +10,21 @@ import {MatMenuModule} from '@angular/material/menu'
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatCardModule} from '@angular/material/card';
 import { MainCardComponent } from './main-card/main-card.component';
+import { NewCardBtnComponent } from './new-card-btn/new-card-btn.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppSiteHeaderComponent,
-    MainCardComponent
+    MainCardComponent,
+    NewCardBtnComponent
   ],
   imports: [
     BrowserModule,
 	BrowserAnimationsModule,
 	MatButtonModule, MatCheckboxModule,MatToolbarModule,
-	MatMenuModule, MatCardModule
+	MatMenuModule, MatCardModule, MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,11 @@
-<div flex class = "flex-xs flex-gt-xs-50" style= " margin:auto ; padding:10px  ; max-width: 400px;">
+<div class="flex-container ap" fxLayout = "column" fxLayoutGap = "10px">
+
+<mat-list fxFlex>
+	<mat-list-item >
 	<mat-card class = "md-card">
-		<mat-card-title> {{cardTitle}}</mat-card-title>
-		<mat-card-content>{{cardContent}}</mat-card-content>
+		<mat-card-title>{{title}}</mat-card-title>
+		<mat-card-content>{{content}}</mat-card-content>
 	</mat-card>
+	</mat-list-item>
+</mat-list>
 </div>
