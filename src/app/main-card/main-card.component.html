@@ -1,11 +1,13 @@
-<div class="flex-container ap" fxLayout = "column" fxLayoutGap = "10px">
+<div class="flex-container card-container" >
 
-<mat-list fxFlex>
-	<mat-list-item >
-	<mat-card class = "md-card">
-		<mat-card-title>{{title}}</mat-card-title>
-		<mat-card-content>{{content}}</mat-card-content>
+	<mat-card class = "card-item" *ngFor="let card1 of cards; let i = index" ng-click="onClickMe()">
+	
+		<mat-card-title>{{card1.title}} {{i}}</mat-card-title>
+		<div *ngIf="selectedCard">	
+			<mat-card-content>{{card1.content}} </mat-card-content>
+		</div>
+		<mat-card-footer>
+			<button mat-raised-button  color ="accent" onClick="onClickMe()"> Content </button>
+		</mat-card-footer>
 	</mat-card>
-	</mat-list-item>
-</mat-list>
 </div>
