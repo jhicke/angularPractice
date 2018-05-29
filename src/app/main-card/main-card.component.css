@@ -8,3 +8,13 @@
 .card-item{
 	margin:10px
 }
+.selected-card-container{
+	
+	margin-left: 20%;
+	margin-right: 20%;
+	justify-content: center
+}
+.selected-card{
+	flex-grow:1;
+	text-align: center;
+}

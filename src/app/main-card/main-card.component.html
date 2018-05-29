@@ -1,8 +1,9 @@
 <div class="flex-container card-container" >
-
+	
 	<mat-card class = "card-item" *ngFor="let card1 of cards; let i = index" ng-click="onClickMe()">
 	
-		<mat-card-title>{{card1.title}} {{i}}</mat-card-title>
+		<mat-card-title >{{card1.title}} {{i}}</mat-card-title>
+		
 		<div *ngIf="selectedCard">	
 			<mat-card-content>{{card1.content}} </mat-card-content>
 		</div>
@@ -10,4 +11,23 @@
 			<button mat-raised-button  color ="accent" onClick="onClickMe()"> Content </button>
 		</mat-card-footer>
 	</mat-card>
+</div>
+<div class="flex-container selected-card-container">
+	<div *ngIf="selectedCard" class="selected-card" >
+		<mat-card >
+			
+			<mat-card-title >
+			<h3>{{selectedCard.title | uppercase}}</h3>
+			</mat-card-title>
+			
+			<div *ngIf="selectedCard">	
+				<mat-card-content>{{selectedCard.content}} </mat-card-content>
+			</div>
+			<mat-card-footer>
+				
+			</mat-card-footer>
+		</mat-card>
+	
+	</div>
+
 </div>

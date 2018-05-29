@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import { MainCardComponent } from './main-card/main-card.component';
 import { NewCardBtnComponent } from './new-card-btn/new-card-btn.component';
 import {MatListModule} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {MatListModule} from '@angular/material/list';
     BrowserModule,
 	BrowserAnimationsModule,
 	MatButtonModule, MatCheckboxModule,MatToolbarModule,
-	MatMenuModule, MatCardModule, MatListModule
+	MatMenuModule, MatCardModule, MatListModule,MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
