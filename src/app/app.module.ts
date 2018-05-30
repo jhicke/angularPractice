@@ -13,6 +13,7 @@ import { MainCardComponent } from './main-card/main-card.component';
 import { NewCardBtnComponent } from './new-card-btn/new-card-btn.component';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list'
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatGridListModule} from '@angular/material/grid-list'
     BrowserModule,
 	BrowserAnimationsModule,
 	MatButtonModule, MatCheckboxModule,MatToolbarModule,
-	MatMenuModule, MatCardModule, MatListModule,MatGridListModule
+	MatMenuModule, MatCardModule, MatListModule,MatGridListModule,
+	MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

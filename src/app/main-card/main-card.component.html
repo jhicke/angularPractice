@@ -1,5 +1,5 @@
 <div class="flex-container card-container" >
-	
+
 	<mat-card class = "card-item" *ngFor="let card1 of cards; let i = index" ng-click="onClickMe()">
 	
 		<mat-card-title >{{card1.title}} {{i}}</mat-card-title>
@@ -12,6 +12,7 @@
 		</mat-card-footer>
 	</mat-card>
 </div>
+<mat-divider ></mat-divider>
 <div class="flex-container selected-card-container">
 	<div *ngIf="selectedCard" class="selected-card" >
 		<mat-card >

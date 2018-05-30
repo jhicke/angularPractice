@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cardo } from '../shared/cardo';
 
+//some reason the import of the const isnt working
 const CARDS: Cardo[] = [
 			{
 				title: 'card title',
@@ -64,7 +65,7 @@ const CARDS: Cardo[] = [
 export class MainCardComponent implements OnInit {
 		cards = CARDS;
 		
-		selectedCard=CARDS[0];
+		selectedCard: Cardo;
 		
 		onClickMe()
 		{
