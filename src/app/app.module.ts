@@ -14,6 +14,7 @@ import { NewCardBtnComponent } from './new-card-btn/new-card-btn.component';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {MatDividerModule} from '@angular/material/divider';
 	BrowserAnimationsModule,
 	MatButtonModule, MatCheckboxModule,MatToolbarModule,
 	MatMenuModule, MatCardModule, MatListModule,MatGridListModule,
-	MatDividerModule
+	MatDividerModule, MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

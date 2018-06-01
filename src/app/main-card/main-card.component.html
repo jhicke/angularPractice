@@ -1,14 +1,17 @@
 <div class="flex-container card-container" >
 
-	<mat-card class = "card-item" *ngFor="let card1 of cards; let i = index" ng-click="onClickMe()">
-	
-		<mat-card-title >{{card1.title}} {{i}}</mat-card-title>
+	<mat-card class = "card-item"  *ngFor="let card1 of cards; let i = index" >
+		<mat-expansion-panel>
+			<mat-expansion-panel-header>
 		
-		<div *ngIf="selectedCard">	
-			<mat-card-content>{{card1.content}} </mat-card-content>
-		</div>
+				<mat-panel-title>{{card1.title}} {{i}}</mat-panel-title>
+			</mat-expansion-panel-header>
+			<mat-panel-description>{{card1.content}} </mat-panel-description>
+		
+		
+		</mat-expansion-panel>
 		<mat-card-footer>
-			<button mat-raised-button  color ="accent" onClick="onClickMe()"> Content </button>
+			<button mat-fab  color ="accent" (click)="onSelect(card1)"> Select </button>
 		</mat-card-footer>
 	</mat-card>
 </div>

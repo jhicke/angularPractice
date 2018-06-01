@@ -1,61 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cardo } from '../shared/cardo';
-
-//some reason the import of the const isnt working
-const CARDS: Cardo[] = [
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-				
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content',
-				selected: 0
-			},
-			{
-				title: 'card title',
-				content: 'card content ',
-				selected: 0
-			}
-		]
-
+import { CARDS} from '../shared/cards';
 
 @Component({
   selector: 'app-main-card',
@@ -67,14 +12,8 @@ export class MainCardComponent implements OnInit {
 		
 		selectedCard: Cardo;
 		
-		onClickMe()
-		{
-			if(this.selected ==0){
-				this.selected =1;
-			}else{
-				this.selected =1;
-			}
-			
+		onSelect(card1 : Cardo){
+			this.selectedCard = card1;
 		}
 	
   constructor() { }
