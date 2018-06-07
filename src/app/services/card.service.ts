@@ -12,11 +12,10 @@ export class CardService {
   }
 
   addCard(){
-	  tempCard =  new Cardo{"default title",
-	"default content",
-	 false);
+	  
+	 //let tempCard = new Cardo{"default title", "default content", false);
 	 
-	 return tempCard;
+	// return tempCard;
   }
   
   

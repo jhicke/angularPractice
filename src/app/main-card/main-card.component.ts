@@ -22,7 +22,7 @@ export class MainCardComponent implements OnInit {
   constructor(private cardService: CardService) { }
 
   ngOnInit() {
-	  
+
 	  this.cards = this.cardService.getCards();
   }
 

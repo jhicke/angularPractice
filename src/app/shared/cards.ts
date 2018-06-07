@@ -4,7 +4,7 @@ export const CARDS: Cardo[]= [
 	{
 		title: 'card title',
 		content: 'card content',
-		selected: false
+		selected: false 
 		
 	},
 	{
