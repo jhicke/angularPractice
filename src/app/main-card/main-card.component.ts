@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Cardo } from '../shared/cardo';
-import { CARDS} from '../shared/cards';
+
+import { CardService} from '../services/card.service';
+
 
 @Component({
   selector: 'app-main-card',
@@ -8,7 +10,8 @@ import { CARDS} from '../shared/cards';
   styleUrls: ['./main-card.component.css']
 })
 export class MainCardComponent implements OnInit {
-		cards = CARDS;
+		cards : Cardo[];
+		
 		
 		selectedCard: Cardo;
 		
@@ -16,9 +19,11 @@ export class MainCardComponent implements OnInit {
 			this.selectedCard = card1;
 		}
 	
-  constructor() { }
+  constructor(private cardService: CardService) { }
 
   ngOnInit() {
+	  
+	  this.cards = this.cardService.getCards();
   }
 
 }

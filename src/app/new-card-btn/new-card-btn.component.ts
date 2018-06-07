@@ -11,5 +11,7 @@ export class NewCardBtnComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  
 
 }

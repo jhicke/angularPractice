@@ -15,6 +15,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {CardService} from './services/card.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 	MatMenuModule, MatCardModule, MatListModule,MatGridListModule,
 	MatDividerModule, MatExpansionModule
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
